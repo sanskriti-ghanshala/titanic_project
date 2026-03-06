@@ -1,87 +1,105 @@
-Titanic Dataset Analysis 🚢
+Titanic Survival Analysis 🚢
+Introduction
 
-Project Overview
+The Titanic disaster is one of the most well-known tragedies in history. The ship sank on April 15, 1912 after hitting an iceberg, leading to the loss of many lives. However, not all passengers had the same chances of survival. Factors such as gender, age, and passenger class played an important role in determining who survived.
 
-This project performs Exploratory Data Analysis (EDA) on the Titanic dataset using Python.
-The main goal of this analysis is to understand the factors that affected passenger survival during the Titanic disaster.
+This project performs an Exploratory Data Analysis (EDA) on the Titanic dataset to understand patterns and relationships in the data. The objective of this analysis is to explore the dataset, clean missing values, and visualize important features that may have influenced passenger survival.
 
-Using data analysis and visualization techniques, we explore how different features such as gender, passenger class, and age influenced survival chances.
 
-Dataset
+Objective
 
-The dataset used in this project is the Titanic dataset, which contains information about passengers such as:
+The main objectives of this project are:
 
-Passenger class (Pclass)
+To explore the Titanic dataset and understand its structure
 
-Name
+To clean and preprocess the dataset by handling missing values
 
-Age
+To perform exploratory data analysis using Python
 
-Gender
+To visualize important patterns using graphs and charts
 
-Fare
+To identify factors that may have influenced survival chances
 
-Embarked port
 
-Survival status
+Dataset Description
 
-Technologies Used
+The dataset contains information about passengers who were on board the Titanic. Some important columns in the dataset include:
 
-The following Python libraries were used in this project:
+Survived – Survival status (0 = No, 1 = Yes)
 
-Python
+Pclass – Passenger class (1st, 2nd, 3rd)
 
-Pandas – data manipulation
+Sex – Gender of passenger
 
-NumPy – numerical operations
+Age – Age of passenger
 
-Matplotlib – data visualization
+SibSp – Number of siblings/spouses aboard
 
-Seaborn – statistical visualizations
+Parch – Number of parents/children aboard
 
-Steps Performed
-1. Data Loading
+Fare – Ticket fare
 
-The dataset was loaded using Pandas and basic information about the dataset was explored.
+Embarked – Port of embarkation
 
-2. Data Cleaning
+Tools and Libraries Used
 
-Missing values in the dataset were handled:
+This project was implemented using Python and the following libraries:
 
-Missing values in Age were replaced with the mean.
+Pandas – for data loading and manipulation
 
-Missing values in Embarked were filled with the mode.
+NumPy – for numerical operations
 
-Cabin column was removed due to too many missing values.
+Matplotlib – for basic data visualization
 
-3. Exploratory Data Analysis (EDA)
+Seaborn – for advanced visualizations
 
-Different visualizations were created to analyze the data, including:
+Data Cleaning
 
-Survival count plot
+Before performing analysis, the dataset required preprocessing. The following steps were taken:
 
-Gender vs survival analysis
+Missing values in the Age column were filled using the mean value.
 
-Passenger class vs survival
+Missing values in the Embarked column were filled using the most frequent value (mode).
 
-Age distribution
+The Cabin column contained too many missing values and was removed from the dataset.
 
-Correlation heatmap
+These steps helped in making the dataset more suitable for analysis.
 
-4. Data Visualization
 
-Graphs and plots were generated using Seaborn and Matplotlib to better understand relationships between features.
+Exploratory Data Analysis
 
-Key Insights
+Exploratory Data Analysis (EDA) was performed to understand patterns in the data. Several visualizations were created to examine relationships between different features.
 
-Some important observations from the analysis:
+The following analyses were performed:
 
-Female passengers had a higher survival rate compared to males.
+Distribution of survival among passengers
 
-Passengers traveling in 1st class had better survival chances than those in lower classes.
+Survival comparison based on gender
 
-Most passengers were between 20 and 40 years old.
+Survival comparison based on passenger class
+
+Age distribution of passengers
+
+Correlation heatmap to understand relationships between numerical features
+
+These visualizations helped in identifying trends and patterns in the dataset.
+
+Key Observations
+
+From the analysis, some important observations were found:
+
+Female passengers had a significantly higher survival rate compared to male passengers.
+
+Passengers traveling in 1st class had better survival chances than those in 2nd and 3rd class.
+
+Younger passengers had slightly better chances of survival compared to older passengers.
+
+These findings suggest that social and economic factors played a role in survival during the disaster.
+
+
 
 Conclusion
 
-This analysis helps in understanding how different factors influenced survival during the Titanic disaster. It also demonstrates basic data cleaning, analysis, and visualization techniques in Python.
+This project demonstrates how data analysis and visualization techniques can be used to explore historical datasets. By analyzing the Titanic dataset, we were able to identify patterns related to passenger survival and understand the influence of different features.
+
+The project also highlights the importance of data cleaning, exploratory data analysis, and visualization in the field of Data Science.
